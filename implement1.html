@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Learning!</title>
+ <style>
+  button{
+    color:red;
+    width:200px;
+    height:40px;
+  }
+</style>
+ </head>
+ <body>
+   <script>
+
+    function func(){
+    var buton=  document.createElement('button');
+      buton.setAttribute('onclick','func()');
+      buton.innerHTML="Hi click me to clone me!";
+      var div=document.getElementById('p');
+      div.appendChild(buton);
+      var br=document.createElement('br');
+      div.appendChild(br);
+    }
+  </script>
+ <button id="s" onclick="func()">Hi click me to clone me!</button>
+ <div id='p'></div>
+
+ </body>
+ </html>
